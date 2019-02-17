@@ -17,11 +17,7 @@ namespace ConsoleApp2
             Console.WriteLine(MyCanvas.GetMaxNumberOfButtons());
             Console.WriteLine(MyCanvas.GetMaxWidthOffAButton());
             Console.WriteLine(MyCanvas.GetMaxHeightOffAButtoon());
-            /*for(int i = 0; i < MyCanvas.GetMaxNumberOfButtons(); i++)
-            {
-                Console.WriteLine(); 
-            }
-            */
+            MyCanvas.Print();
             Console.WriteLine(MyCanvas.IsPointeInsideAButton(3,5));
             Console.WriteLine(MyCanvas.CheckIfAnyButtonIsOverlapping());
             Console.WriteLine(MyCanvas.MoveButton(1,2,2));

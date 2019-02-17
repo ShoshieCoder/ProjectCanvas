@@ -120,13 +120,12 @@ namespace ConsoleApp2
                 return 0;
         }
 
-        public override string ToString()
+        public static void Print()
         {
             for(int i=0;i<buttons.Length;i++)
             {
-                Console.WriteLine(buttons[i].ToString());
+                Console.WriteLine(buttons[i]);
             }
-            return "That is all";
         }
 
         public static bool IsPointeInsideAButton(int x,int y)

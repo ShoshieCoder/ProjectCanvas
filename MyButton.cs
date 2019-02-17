@@ -64,13 +64,13 @@ namespace ConsoleApp2
 
         private void UpdateWidthAndHeight()
         {
-            this._width = _bottomRight.GetX() - _topLeft.GetX();
-            this._height = _topLeft.GetY() - _bottomRight.GetY();
+            this._width = Math.Abs(_bottomRight.GetX() - _topLeft.GetX());
+            this._height = Math.Abs(_topLeft.GetY() - _bottomRight.GetY());
         }
 
         public override string ToString()
         {
-            return ($"TOP LEFT: {this._topLeft.GetX()}, {this._topLeft.GetY()}/nBOTTOM RIGHT: {this._bottomRight.GetX()}, {this._bottomRight.GetY()}/nHEIGHT: {this._height}/nWIDTH: {this._width}");
+            return ($"TOP LEFT: {this._topLeft.GetX()}, {this._topLeft.GetY()} BOTTOM RIGHT: {this._bottomRight.GetX()}, {this._bottomRight.GetY()} HEIGHT: {this._height} WIDTH: {this._width}");
         }
 
     }
